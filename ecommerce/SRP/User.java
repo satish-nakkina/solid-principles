@@ -1,5 +1,7 @@
 package ecommerce.SRP;
 
+import ecommerce.ISP.Receipt;
+
 public class User {
     private String name;
     private String email;
@@ -18,6 +20,5 @@ public class User {
     public String getEmail() {
         return email;
     }
-
 
 }

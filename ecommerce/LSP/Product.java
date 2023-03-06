@@ -1,6 +1,8 @@
-package ecommerce.SRP;
+package ecommerce.LSP;
 
-public  class Product {
+import ecommerce.ISP.Discount;
+
+public  class Product implements Discount {
     private String name;
     private double price;
 

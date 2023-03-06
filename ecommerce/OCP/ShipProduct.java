@@ -1,7 +1,7 @@
 package ecommerce.OCP;
 
 
-import ecommerce.SRP.Product;
+import ecommerce.LSP.Product;
 
 public class ShipProduct extends Product {
     private double weight;

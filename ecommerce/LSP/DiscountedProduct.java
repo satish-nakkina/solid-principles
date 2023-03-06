@@ -1,8 +1,6 @@
 package ecommerce.LSP;
 
 
-import ecommerce.SRP.Product;
-
 public class DiscountedProduct extends Product {
     private double discount;
 

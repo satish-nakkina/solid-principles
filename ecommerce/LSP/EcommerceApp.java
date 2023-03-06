@@ -3,7 +3,6 @@ package ecommerce.LSP;
 import ecommerce.DIP.Order;
 import ecommerce.ISP.PaymentGateway;
 import ecommerce.OCP.PaypalGateway;
-import ecommerce.SRP.Product;
 import ecommerce.SRP.User;
 
 import java.util.Arrays;
@@ -18,12 +17,16 @@ public class EcommerceApp {
                 new DiscountedProduct("Product 3", 30.0,0.25)
         );
 
+        Product p=new Product("product 4",30.0);
+        Product d=new DiscountedProduct("Product 3", 30.0,0.5);
+
+        System.out.println(p.getDiscountedPrice());
         PaymentGateway paymentGateway = new PaypalGateway();
         Order order = new Order(user, products, paymentGateway);
 
         if (order.processPayment()) {
             System.out.println("Payment processed successfully!");
-            System.out.println("Toal amount is "+order.getTotal());
+            System.out.println("Total amount is "+order.getTotal());
 
         } else {
             System.out.println("Payment failed!");

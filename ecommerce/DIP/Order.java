@@ -1,7 +1,7 @@
 package ecommerce.DIP;
 
 import ecommerce.ISP.PaymentGateway;
-import ecommerce.SRP.Product;
+import ecommerce.LSP.Product;
 import ecommerce.SRP.User;
 
 import java.util.List;
