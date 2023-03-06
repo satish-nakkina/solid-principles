@@ -9,6 +9,6 @@ public class Admin extends User {
     }
 
     public void paymentReceipt() {
-        throw new UnsupportedOperationException("Admins do not have payment receipts.");
+        throw new UnsupportedOperationException("Admin do not have payment receipts.");
     }
 }
